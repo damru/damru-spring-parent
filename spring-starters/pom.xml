@@ -11,6 +11,7 @@
 
     <artifactId>spring-starters</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>spring-starter-openfeign</module>
         <module>spring-starter-rest</module>
@@ -19,6 +20,5 @@
         <module>spring-starter-security-flux</module>
         <module>spring-starter-test</module>
     </modules>
-
 
 </project>

@@ -11,6 +11,18 @@
 
     <artifactId>spring-autoconfigure</artifactId>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.damru</groupId>
+                <artifactId>spring-dependencies</artifactId>
+                <version>${project.parent.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -39,13 +51,13 @@
         <dependency>
             <groupId>io.damru</groupId>
             <artifactId>spring-starter-openfeign</artifactId>
-            <version>${project.parent.version}</version>
+            <optional>true</optional>
         </dependency>
 
         <dependency>
             <groupId>io.damru</groupId>
             <artifactId>spring-starter-test</artifactId>
-            <version>${project.parent.version}</version>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 </project>
