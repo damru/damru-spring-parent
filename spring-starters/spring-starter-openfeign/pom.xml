@@ -12,7 +12,7 @@
     <artifactId>spring-starter-openfeign</artifactId>
 
     <properties>
-        <openfeign.version>10.1.0</openfeign.version>
+        <openfeign.version>10.2.3</openfeign.version>
     </properties>
 
     <dependencies>
@@ -23,18 +23,16 @@
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <artifactId>spring-cloud-openfeign-core</artifactId>
         </dependency>
 
         <dependency>
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-core</artifactId>
-            <version>${openfeign.version}</version>
         </dependency>
         <dependency>
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-jackson</artifactId>
-            <version>${openfeign.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>com.fasterxml.jackson.core</groupId>
