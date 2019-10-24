@@ -11,6 +11,9 @@
 
     <artifactId>spring-starter-security</artifactId>
 
+    <properties>
+        <okta.version>1.3.0</okta.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -19,6 +22,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.damru</groupId>
+            <artifactId>spring-security-autoconfigure</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 

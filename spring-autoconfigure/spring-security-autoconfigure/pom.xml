@@ -3,17 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>damru-spring-parent</artifactId>
+        <artifactId>spring-autoconfigure</artifactId>
         <groupId>io.damru</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-autoconfigure</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>spring-security-autoconfigure</module>
-    </modules>
+    <artifactId>spring-security-autoconfigure</artifactId>
 
     <dependencyManagement>
         <dependencies>
@@ -30,17 +26,9 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>io.damru</groupId>
-            <artifactId>spring-starter-test</artifactId>
+            <artifactId>spring-boot-starter-security</artifactId>
             <optional>true</optional>
         </dependency>
     </dependencies>
+
 </project>

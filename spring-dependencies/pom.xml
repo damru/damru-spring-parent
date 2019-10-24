@@ -17,32 +17,32 @@
             <dependency>
                 <groupId>io.damru</groupId>
                 <artifactId>spring-starter-openfeign</artifactId>
-                <version>${project.parent.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.damru</groupId>
                 <artifactId>spring-starter-rest</artifactId>
-                <version>${project.parent.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.damru</groupId>
                 <artifactId>spring-starter-rest-flux</artifactId>
-                <version>${project.parent.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.damru</groupId>
                 <artifactId>spring-starter-security</artifactId>
-                <version>${project.parent.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.damru</groupId>
                 <artifactId>spring-starter-security-flux</artifactId>
-                <version>${project.parent.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.damru</groupId>
                 <artifactId>spring-starter-test</artifactId>
-                <version>${project.parent.version}</version>
+                <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
