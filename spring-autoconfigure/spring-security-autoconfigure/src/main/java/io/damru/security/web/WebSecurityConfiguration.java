@@ -17,12 +17,22 @@ import java.util.Arrays;
 @ConditionalOnClass(WebSecurityConfigurerAdapter.class)
 public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
-    @Value("${app.http.web.allowedOrigins:*}")
-    private String allowedOrigins;
+    @Value("${app.http.cors.allowedOrigins:*}")
+    private String[] allowedOrigins;
+
+    @Value("${app.http.csrf.enabled:true}")
+    private boolean csrfEnabled;
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
         cors(http);
+        csrf(http);
+    }
+
+    private void csrf(HttpSecurity http) throws Exception {
+        if (! this.csrfEnabled) {
+            http.csrf().disable();
+        }
     }
 
     private void cors(HttpSecurity http) throws Exception {
