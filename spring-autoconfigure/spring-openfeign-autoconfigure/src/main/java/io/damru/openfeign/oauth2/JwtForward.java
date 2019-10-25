@@ -1,4 +1,4 @@
-package io.damru.openfeign;
+package io.damru.openfeign.oauth2;
 
 import feign.RequestInterceptor;
 import org.springframework.context.annotation.Bean;
