@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+io.damru.security.web.WebSecurityConfiguration,\
+io.damru.security.web.oauth2.MethodSecurityConfiguration,\
+io.damru.security.web.oauth2.OAuth2WebSecurityConfiguration
