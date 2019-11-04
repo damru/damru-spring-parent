@@ -20,7 +20,7 @@ import java.util.Arrays;
 @ConditionalOnWebApplication
 @ConditionalOnClass(WebSecurityConfigurerAdapter.class)
 @EnableWebSecurity
-@Order(101)
+@Order(95)
 public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Value("${app.http.cors.allowedOrigins:*}")
@@ -29,15 +29,21 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Value("${app.http.csrf.enabled:true}")
     private boolean csrfEnabled;
 
+    @Value("${app.http.security.deny-by-default:true}")
+    private boolean denied;
+
     @Override
     public void configure(HttpSecurity http) throws Exception {
         cors(http);
-        options(http);
         csrf(http);
+        defaultPolicy(http);
     }
 
-    private void options(HttpSecurity http) throws Exception {
+    private void defaultPolicy(HttpSecurity http) throws Exception {
         http.authorizeRequests().antMatchers(HttpMethod.OPTIONS, "/**").permitAll();
+        if (!denied) {
+            http.authorizeRequests().anyRequest().permitAll();
+        }
     }
 
     private void csrf(HttpSecurity http) throws Exception {

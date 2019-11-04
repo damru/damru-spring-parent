@@ -5,7 +5,6 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplicat
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.oauth2.server.resource.web.access.BearerTokenAccessDeniedHandler;
 
@@ -15,8 +14,7 @@ import org.springframework.security.oauth2.server.resource.web.access.BearerToke
         WebSecurityConfigurerAdapter.class,
         BearerTokenAccessDeniedHandler.class
 })
-@EnableWebSecurity
-@Order(102)
+@Order(90)
 public class OAuth2WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
