@@ -20,7 +20,7 @@ import java.util.Arrays;
 @ConditionalOnWebApplication
 @ConditionalOnClass(WebSecurityConfigurerAdapter.class)
 @EnableWebSecurity
-@Order(95)
+@Order(0)
 public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Value("${app.http.cors.allowedOrigins:*}")
@@ -41,7 +41,9 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     private void defaultPolicy(HttpSecurity http) throws Exception {
         http.authorizeRequests().antMatchers(HttpMethod.OPTIONS, "/**").permitAll();
-        if (!denied) {
+        if (denied) {
+            http.authorizeRequests().anyRequest().authenticated();
+        } else {
             http.authorizeRequests().anyRequest().permitAll();
         }
     }

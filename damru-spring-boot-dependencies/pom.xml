@@ -16,6 +16,11 @@
         <dependencies>
             <dependency>
                 <groupId>io.damru</groupId>
+                <artifactId>damru-spring-boot-starter-openfeign</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.damru</groupId>
                 <artifactId>damru-spring-boot-starter-rest</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -42,11 +47,6 @@
             <dependency>
                 <groupId>io.damru</groupId>
                 <artifactId>damru-spring-boot-starter-test</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.damru</groupId>
-                <artifactId>damru-spring-boot-openfeign-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>

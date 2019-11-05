@@ -14,7 +14,7 @@ import org.springframework.security.oauth2.server.resource.web.access.BearerToke
         WebSecurityConfigurerAdapter.class,
         BearerTokenAccessDeniedHandler.class
 })
-@Order(90)
+@Order(1)
 public class OAuth2WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
