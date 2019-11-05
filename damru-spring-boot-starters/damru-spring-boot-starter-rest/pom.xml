@@ -26,5 +26,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-undertow</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>io.damru</groupId>
+            <artifactId>damru-spring-boot-exception-autoconfigure</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 </project>

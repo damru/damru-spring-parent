@@ -1,4 +1,4 @@
-package io.damru.security.web.oauth2.okta;
+package io.damru.security.web.oauth2.okta.model;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.security.core.context.SecurityContextHolder;

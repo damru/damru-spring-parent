@@ -1,4 +1,4 @@
-package io.damru.security.web.oauth2.okta;
+package io.damru.security.web.oauth2.okta.model;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

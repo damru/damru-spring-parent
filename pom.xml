@@ -13,6 +13,7 @@
         <module>damru-spring-boot-openfeign-autoconfigure</module>
         <module>damru-spring-boot-security-autoconfigure</module>
         <module>damru-spring-boot-starters</module>
+        <module>damru-spring-boot-exception-autoconfigure</module>
     </modules>
 
     <properties>
