@@ -5,7 +5,7 @@
     <parent>
         <groupId>io.damru</groupId>
         <artifactId>damru-spring-boot-starters</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -30,7 +30,6 @@
         <dependency>
             <groupId>io.damru</groupId>
             <artifactId>damru-spring-boot-exception-autoconfigure</artifactId>
-            <version>${project.version}</version>
         </dependency>
     </dependencies>
 </project>
